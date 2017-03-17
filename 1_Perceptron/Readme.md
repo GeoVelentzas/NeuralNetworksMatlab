@@ -1,6 +1,2 @@
-#Learning of a single perceptron
-
-Run file simulate.m on Matlab or Octave. You can modify it for a different
-dataset of your choice. This small part demonstrates how the very simplistic
-learning rule of a perceptron can find optimal weights when the classes are
-linear sepaerable.
+# Learning rule for single perceptrons
+Run file simulate.m on Matlab or Octave. You can modify it for a dataset of your choice. This simulation demonstrates how the simplistic learning rule of a perceptron, can update weights efficiently when the classes are linear separable. However, if the classes are not linear separable the algorithm doesn't converge.
