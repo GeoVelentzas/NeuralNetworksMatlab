@@ -1,5 +1,5 @@
 # NeuralNetworksMatlab
-From single Perceptrons to Deep Learning Networks
+From Perceptrons to Deep Learning Networks
 
 The directories of this repository include code from assignments of the course 
 Neural Networks for Machine Learning offered by University of Toronto and Proffessor 
