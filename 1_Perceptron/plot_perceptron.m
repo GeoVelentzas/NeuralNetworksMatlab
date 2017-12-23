@@ -53,13 +53,13 @@ end
 title('Classifier');
 
 %In order to plot the decision line, we just need to get two points.
-plot([-5,5],[(-w(end)+5*w(1))/w(2),(-w(end)-5*w(1))/w(2)],'k')
+plot([-5,5],[(-w(end)+5*w(1))/w(2),(-w(end)-5*w(1))/w(2)],'k'); box on;
 xlim([-1,1]);
 ylim([-1,1]);
 hold off;
 
 subplot(2,2,2);
-plot(0:length(num_err_history)-1,num_err_history);
+plot(0:length(num_err_history)-1,num_err_history); box on;
 xlim([-1,max(15,length(num_err_history))]);
 ylim([0,size(neg_examples,1)+size(pos_examples,1)+1]);
 title('Number of errors');
@@ -67,9 +67,13 @@ xlabel('Iteration');
 ylabel('Number of errors');
 
 subplot(2,2,3);
-plot(0:length(w_dist_history)-1,w_dist_history);
+plot(0:length(w_dist_history)-1,w_dist_history); box on;
 xlim([-1,max(15,length(num_err_history))]);
 ylim([0,15]);
 title('Distance')
 xlabel('Iteration');
 ylabel('Distance');
+
+subplot(2,2,4);
+imshow(zeros(1,100));
+xlabel('press enter of next step or q to quit');
